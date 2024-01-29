@@ -1,0 +1,120 @@
+@import url(style.css);
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Cards */
+.wrapper {
+  padding: 10px 5%;
+}
+
+#card-area {
+  padding: 10px 0;
+}
+
+.box-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+
+.box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 9px 9px 150px var(--cor-especial);
+}
+
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.overlay {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(transparent, var(--cor-especial) 58%);
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 17px;
+  transition: height 0.5s;
+}
+
+.overlay h3 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 20%;
+  font-family: var(--fonte-especial);
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.overlay a {
+  margin-top: 10px;
+  color: #262626;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.box:hover .overlay {
+  height: 100%;
+}
+#titulo {
+color: #FF0066;
+}
+
+/* pag inspired e cadastre */
+#paraBaixo{
+  margin-top: 100px;
+  padding: 20px;
+
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}

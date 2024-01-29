@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   
+    <!-- Biblioteca JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Fivecon -->
+    <link rel="shortcut icon" href="./img/favicons/Mae.png" type="image/x-icon" />
+    <title> Inicio | Guerreira Empreendedora™ </title>
+</head>
+
+<body>
+    <!-- Navbar -->
+   <div th:replace="base :: navlinks"> </div>
+
+    <!-- CORPO -->
+    <main>
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="active" aria-current="true"></button>
+
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Primeiro slide -->
+                <div class="carousel-item carousel-item-start active">
+                    <svg class="bd-placeholder-img" id="slide1" width="100%" height="100%"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                        <rect width="100%" height="100%" fill="var(--cor-rect)"></rect>
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-white text-start">
+                            <h1>Gerreira Empreendedora</h1>
+                            <p class="opacity-75">
+                                Empoderando mães, Transformando Negócios!
+                            </p>
+
+                            <p><a class="btn btn-lg btn-primary" href="/cadastro">cadastre-se</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo slide -->
+                <div class="carousel-item carousel-item-next carousel-item-start">
+                    <svg class="bd-placeholder-img" id="slide2" width="100%" height="100%"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                        <rect width="100%" height="100%" fill="var(--cor-rect)"></rect>
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-white">
+                            <h1>Gerreira Empreendedora.</h1>
+                            <p class="opacity-75">
+                                Empoderando mães, Transformando Negócios!.
+                            </p>
+
+                            <p><a class="btn btn-lg btn-primary" href="/login">Cadastre-se</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terceiro slide -->
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" id="slide3" width="100%" height="100%"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                        <rect width="100%" height="100%" fill="var(--cor-rect)"></rect>
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-white text-end">
+                            <h1>Gerreira Empreendedora</h1>
+                            <p class="opacity-7Empoderando mães, Transformando Negócios!5">
+                                Empoderando mães, Transformando Negócios!
+
+                            <p><a class="btn btn-lg btn-primary" href="/cadastro">Cadastre-se</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Voltar</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Avançar</span>
+            </button>
+        </div>
+
+        <!-- Card -->
+        <div id="card-area">
+            <div class="wrapper">
+                <div class="box-area">
+                    <!-- Card 01 -->
+                    <div class="box">
+                        <img alt="" src="https://i.pinimg.com/564x/1b/c6/17/1bc6179088f685405db7ba2fdfa31a42.jpg">
+                        <div class="overlay">
+                            <h3>Missão</h3>
+                            <p>Nossa missão é capacitar mulheres empreendedoras a alcançarem seu pleno potencial,
+                                fornecendo recursos, orientação e uma comunidade de apoio que as ajudem a superar
+                                barreiras, conquistar objetivos ambiciosos e criar negócios de sucesso.
+
+                        </div>
+                    </div>
+
+                    <!-- Card 02 -->
+                    <div class="box">
+                        <img alt="" src="https://i.pinimg.com/564x/1b/c6/17/1bc6179088f685405db7ba2fdfa31a42.jpg">
+                        <div class="overlay">
+                            <h3>Visão</h3>
+                            <p>Nossa visão é construir um mundo empresarial onde mulheres empreendedoras desempenham um
+                                papel fundamental em todas as indústrias e setores. Queremos ver um ecossistema no qual
+                                as mulheres não apenas superem desafios tradicionais de gênero, mas também se destaquem
+                                como líderes, mentoras e modelos a serem seguidos.</p>
+
+                        </div>
+                    </div>
+
+                    <!-- Card 03 -->
+                    <div class="box">
+                        <img alt="" src="https://i.pinimg.com/564x/1b/c6/17/1bc6179088f685405db7ba2fdfa31a42.jpg">
+                        <div class="overlay">
+                            <h3>Nossos Valores.</h3>
+                            <p>Empoderamento: Acreditamos no poder das mulheres empreendedoras para impactar
+                                positivamente suas vidas, comunidades e economias. Estamos comprometidos em fornecer as
+                                ferramentas e o conhecimento necessários para que elas alcancem o sucesso.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sobre -->
+
+        <div id="jumboton" class="container border-5 text-white p-3 rounded my-4">
+            <h2>Sobre</h2>
+            <hr>
+            <p>A maternidade sempre chega para mudar nossas vidas, e não foi diferente por aqui, redefinimos nossos
+                objetivos e propósito de vida.
+                Sabemos como essa nova fase nos transforma, sentimos um amor avassalador, mas ao mesmo tempo medo,
+                frustração, culpa e exaustão.</p>
+
+            <p>E foi pensando em como apoiar as mães nessa linda e desafiante jornada, que idealizamos a Gerreira
+                Empreendedora.</p>
+
+            <p> Estamos formando uma verdadeira Rede de Apoio Online para que a maternidade e o sonho de empreender seja
+                vivido de uma forma mais leve, tranquila e menos solitária</p>
+                
+            <p>Nosso propósito é capacitar as mulheres (mães), que querem abrir seu negócio e estão vivendo os desafios
+                da jornada materna com ou sem ajuda. E como fazemos isso? Através de conteúdo e conexões!
+                Entreem nosso site para se conectar e trocar experiências e conheça nossos Cursos, que prepara de
+                verdade as mães para o desafio de abrir seu negocio.
+                Estamos te esperando❤️</p>
+        </div>
+        <div class="container">
+            <button id="button-jumbotron"  onclick="document.getElementById('jumboton').classList.remove('invisible')">Mostrar</button>
+            <button onclick="document.getElementById('jumboton').classList.add('invisible')">Ocultar</button>
+        
+    </main>
+    <!-- RODAPÉ -->
+    <div class="container" th:replace="base :: footer"></div>
+
+</body>
+
+</html>

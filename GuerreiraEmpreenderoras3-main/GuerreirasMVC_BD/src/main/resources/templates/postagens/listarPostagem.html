@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark" xmlns:th="www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Framework Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- Biblioteca JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+
+	<!-- CSS Externo -->
+	<link rel="stylesheet" href="../css/cadastre-se.css">
+
+	<!-- Fivecon -->
+	<link rel="shortcut icon" href="../img/favicons/Mae.png" type="image/x-icon" />
+	<title> Cadastro | Guerreira Empreendedoras</title>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<div th:replace="base :: navlinks"> </div>
+
+	<!-- CORPO -->
+	<main class="container-fluid">
+		<div id="cor-fundo">
+			<div class="row">
+				<div class="text-center" id="paraBaixo">
+					<a th:href="@{/postagens/incluirPostagem}" class="w-100 btn btn-lg btn-primary">Cadastrar
+						Feed</a>
+				</div>
+			</div>
+			<!-- Section-->
+			<section class="py-5">
+				<div class="container px-4 px-lg-10 mt-5" th:each="postagens : ${postagens}">
+					<div class="card h-100">
+						<!--Product details-->
+						<div class="card-body p-4">
+							<div class="text-center">
+								<!-- Product name-->
+								<h3 class="fw-bolder" th:text="${postagens.nome}"></h3>
+								<span style="display: inline-block; margin-right: 50px;">Data Postagem =></span>
+								<h6 style="display: inline-block; margin-right: 5px;" class="text-center"
+									th:text="${#temporals.format(postagens.data, 'dd-MM-yyyy')}"></h6>
+								<div>
+									<div class="text-center text-muted">
+										<span style="display: inline-block; margin-right: 50px;">Area de
+											atuação=></span>
+										<h6 style="display: inline-block; margin-right: 5px;" class="text-center"
+											th:text="${postagens.area}"></h6>
+									</div>
+								</div>
+								<div>
+									<div class="text-center text-muted">
+										<h6 style="display: inline-block; margin-right: 5px;" class="text-center"
+											th:text="${postagens.descricao}"></h6>
+									</div>
+								</div>
+								<!-- Product image-->
+								<div class="d-flex justify-content-center align-items-center">
+									<img class="card-img-top" style="width: 500px; height: 400px;"
+										th:src="|/postagens/imagem/${postagens.id}|" />
+								</div>
+								<br>
+
+							</div>
+						</div>
+
+						<!-- ir para pacote-->
+						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+							<div class="text-center">
+								<a th:href="@{/postagens/{id}/editar (id=${postagens.id})}"
+									class="btn btn-warning">Editar</a>
+								<a th:href="@{/postagens/{id}/excluir (id=${postagens.id})}" class="btn btn-danger"
+									onclick="return confirm('Tem certeza que deseja excluir o Postagem?');">Excluir</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</main>
+	<!-- RODAPÉ -->
+	<div class="container" th:replace="base :: footer"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>

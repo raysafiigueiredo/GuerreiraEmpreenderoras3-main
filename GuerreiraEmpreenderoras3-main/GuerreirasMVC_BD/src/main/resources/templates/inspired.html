@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark" xmlns:th="www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Framework Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- Biblioteca JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+
+	<!-- CSS Externo -->
+	<link rel="stylesheet" href="./css/inspired.css">
+
+	<!-- Fivecon -->
+	<link rel="shortcut icon" href="./img/favicons/Mae.png" type="image/x-icon" />
+
+	<title> Inspire-se | Guerreira Empreendedoras™ </title>
+</head>
+
+<body>
+
+	<div th:replace="base :: navlinks"> </div>
+	<main class="container">
+		<div class="p-5 p-md-5 mb-4 text-white rounded bg-dark " id="paraBaixo">
+			<div class="col-md-10 px-0">
+				<h1 class="display-4 fst-italic"> A maioria das mulheres empreendedoras no Brasil são mães.</h1>
+				<p class="lead my-1 mb-0">Após virarem mães, mulheres encontram no empreendedorismo uma porta para obter
+					uma fonte de renda.</p>
+			</div>
+		</div>
+
+		<div class="row mb-6">
+			<div class="col-md-6">
+				<div
+					class="row g-2 border rounded overflow-hidden flex-md-row mb-4 shadow-sm-6 h-md-250 position-relative">
+					<div class="col-md-4 row g-2">
+						<img src="./img/Inspire-se/mae-empree2.png" class="img-fluid rounded-start">
+					</div>
+					<div class="col-md-8">
+						<div class="col p-12 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2" id="titulo">Por que as mulheres mães escolhe
+								empreender?</strong>
+							<p class="card-text ">A dificuldade de algumas mulheres no ambiente de trabalho para
+								conciliar a carreira com a maternidade é um dos principais obstáculos na busca por
+								emprego. A falta de políticas corporativas não pensadas para as mães e falta de
+								flexibilidade reflete na taxa de desemprego feminino. E, como consequência muitas
+								mulheres estão tornando-se empreendedoras. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div
+					class="row g-2 border rounded overflow-hidden flex-md-row mb-4 shadow-sm-6 h-md-250 position-relative">
+					<div class="col-md-4 row g-2 ">
+						<img src="./img/Inspire-se/mae-empree3.png" class="img-fluid rounded-start">
+					</div>
+					<div class="col-md-8">
+						<div class="col p-12 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2" id="titulo">Como falta de profissionalismo e
+								qualificação pode afetar negativamente as mães empreendedoras?</strong>
+							<p class="mb-auto">
+							<ul>
+								<li> Desvantagem Competitiva</li>
+								<li> Decisões Ineficazes</li>
+								<li> Dificuldade em Atrair Investimentos</li>
+								<li> Barreiras ao Crescimento</li>
+								<li> Estresse Adicional</li>
+							</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row g-5">
+			<div class="col-md-8">
+				<h3 class="pb-4 mb-4 fst-italic border-bottom">
+					Mães empreendedoras: histórias de sucesso para se inspirar!
+				</h3>
+
+				<article class="blog-post">
+					<h2 class="blog-post-title">Histórias de mães empreendedoras de sucesso!</h2>
+					<!-- Card -->
+					<div id="card-area">
+						<div class="wrapper">
+							<div class="box-area">
+								<!-- Card 01 -->
+
+								<div class="box">
+									<img alt="" src="./img/Inspire-se/Mariana-Achutti.jpeg">
+									<div class="overlay ">
+										<h3>Mariana Achutti, mãe do Domenico, de 2 ano, é fundadora e CEO da
+											Sputnik</h3>
+										<p>Fundadora e CEO da SPUTNiK, é empreendedora e vem ajudando a provocar
+											mudanças
+											estruturais no universo corporativo por meio de uma educação criativa e
+											disruptiva
+											em empresas como Google, Facebook, Globo, Boticário, Ambev, entre outras.
+											Como
+											brasileira, empreendedora e líder, contribui com sua experiência e
+											conhecimento sobre novas perspectivas e possibilidades educacionais. Mariana
+											se tornou mãe do Domenico no ano passado, após ter vivido a gravidez em meio
+											à pandemia e ao home office. Para ela, a maternidade traz skills
+											importantíssimas e que, se valorizadas, poderiam transformar o universo
+											corporativo.
+										</p>
+									</div>
+									<a href="https://www.instagram.com/mariachutti/" class="btn btn-primary"
+										target="_blank">Vistite o instagram da Mariana Achutti</a>
+								</div>
+
+								<!-- Card 02 -->
+
+								<div class="box">
+									<img alt="" src="./img/Inspire-se/brunna-farizel.jpg" style="width: 127%;">
+									<div class="overlay">
+										<h3>Brunna Farizel, fundadora da Splash Bebidas Urbanas, mãe da
+											Helena e Sofia, atualmente gravida do Enrico.</h3>
+										<p>“Empreender é uma atitude corajosa que envolve frequentemente abandonar o
+											conhecido e assumir riscos. Quando me tornei mãe, percebi que queria ter
+											mais tempo de qualidade com minha filha, vê-la crescer, acompanhar a
+											primeira infância.
+											Investir no meu próprio negócio permitiu não só que eu tivesse mais
+											flexibilidade de tempo, mas também liberdade para ser mais criativa. A
+											maternidade é uma grande
+											impulsionadora para lidar com os desafios que surgem no caminho. Além disso,
+											é
+											muito gratificante ver meu negócio crescer e fazer a diferença na vida de
+											outras
+											pessoas. Atualmente temos mais de 100 lojas espalhadas pelo Brasil e muitas
+											de nossas franqueadas são mães e chefes de família. Meu conselho para quem
+											deseja
+											empreender e maternar ao mesmo tempo é apenas um: sigam em frente e persigam
+											seu sonho!”
+										</p>
+									</div>
+									<a href="https://instagram.com/brunnafarizel?igshid=MzRlODBiNWFlZA=="
+										class="btn btn-primary" target="_blank">Vistite o instagram da Brunna
+										Farizel</a>
+								</div>
+
+								<!-- Card 03 -->
+
+								<div class="box">
+									<img alt="" src="./img/Inspire-se/Aline-Medici.jpg">
+									<div class="overlay">
+										<h3>Aline Medici, Fundadora da rede Ad Clinic.</h3>
+										<p>“Empreender ou ser mãe? Um dos maiores desafios que nós
+											mulheres enfrentamos. O trabalho não proporciona apenas a independência
+											financeira, mas também prova que somos peças fundamentais para compor o
+											orçamento familiar e, além disso, também necessitamos seguir a nossa própria
+											carreira. Quando se tem filhos muitas coisas mudam, minha maior motivação
+											veio do nascimento do Biel e da Duda. Para as mães que gostariam de
+											empreender,
+											deixo algumas dicas: ter o meu próprio negócio me ajudou bastante, pois
+											consigo
+											flexibilizar os horários com a minha vida pessoal. Sempre dedico um tempo só
+											para meus filhos. Aconselho a nunca levar trabalho para casa e não deixar as
+											preocupações entrarem na sua casa. Não se culpe ou se cobre”</p>
+									</div>
+									<a href="https://instagram.com/alinemedici?igshid=MzRlODBiNWFlZA=="
+										class="btn btn-primary" target="_blank">Vistite o instagram da Aline Medici</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-4" id="divFixa">
+				<div class="position-sticky" style="top: 2rem;">
+					<div class="p-4 mb-3 rounded">
+						<h4 class="fst-italic">Por que incentivar o empreendedorismo feminino?</h4>
+						<p class="mb-0">"Embora tenham ocorrido alguns avanços, o Brasil ainda tem um longo caminho a
+							percorrer no que diz respeito ao apoio às mulheres como empreendedoras."</p>
+						<p>Para Veronica, do Sebrae-SP, incentivar o empreendedorismo feminino é fundamental para
+							promover a igualdade de gênero e o desenvolvimento econômico. “As mulheres são capazes de
+							gerar impacto positivo em suas comunidades e empresas, trazendo novas ideias, perspectivas e
+							soluções para problemas complexos.</p>
+						<p>Além disso, diz, Verônica Lima, o empreendedorismo pode ser uma opção para mulheres que
+							enfrentam barreiras no mercado de trabalho tradicional, como discriminação salarial e falta
+							de oportunidades de ascensão profissional. “Muitas vezes, o empreendedorismo é a única
+							oportunidade de ter autonomia financeira para sair de relacionamentos abusivos e de
+							violência”. </p>
+						<p>Apoiar uma mulher empreendedora é uma maneira de mostrar para as meninas, desde a infância,
+							que há espaço para elas serem o que quiserem no país</p>
+					</div>
+				</div>
+	</main>
+	<!-- RODAPÉ -->
+	<div class="container" th:replace="base :: footer"></div>
+
+</body>
+
+</html>

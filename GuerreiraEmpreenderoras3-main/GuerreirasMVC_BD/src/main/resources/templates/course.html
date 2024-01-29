@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark"  xmlns:th="www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        
+    <!-- Biblioteca JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="./css/couse.css">
+
+    <!-- Fivecon -->
+    <link rel="shortcut icon" href="./img/favicons/Mae.png" type="image/x-icon" />
+
+    <title> Cursos | Guerreira Empreendedoras</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+	<div th:replace="base :: navlinks"> </div>
+    <!-- CORPO -->
+    <hr class="featurette-divider">
+    <main>
+        <!-- Top -->
+        <div class="container-fluid mb-5" id="bg-main-top">
+            <div class="container">
+                <div class="row" id="bg-main-top2">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3">
+                         Nossos Cursos 
+                        </h1>
+
+                        <p class="fs-5">
+                            "Empoderando mães, Transformando Negócios!!"
+                        </p>
+
+                        <div class="position-relative mx-auto d-flex gap-2 p-1 my-4 w-50">
+                            <input class="form-control rounded-pill px-4 border-0" type="text"
+                                placeholder="Ex: Organizando as finanças">
+
+                                <a class="btn btn-primary" role="button" href="#">
+                                   pesquisar
+                                </a>
+                        </div>
+                     </div>
+							
+							<!-- Botão Cadastrar Novo Curso -->
+<!-- Botão Cadastrar Novo Curso -->
+<div class="container-fluid text-center mt-4">
+    <a th:href="@{/novocurso/novocurso}" class="btn btn-primary d-flex justify-content-center align-items-center w-100" role="button">
+        <i class="bi bi-plus-lg me-2"></i> Novo Curso
+    </a>
+</div>
+
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Circulo -->
+        <div class="container marketing">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" id="circulo1" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <title> Empreendedorismo feminino</title>
+                    </svg>
+
+                    <h2 class="fw-normal">Organizando as finanças do negócio</h2>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="bi bi-tag"></i>
+                                Preço: Gratuito
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-clock"></i>
+                                Duração: 2 horas
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-mouse2-fill"></i>
+                                Formato: Online
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p><a class="btn btn-secondary" href="#">Acesse aqui »</a></p>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" id="circulo2" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <title> Empreendedorismo feminino</title>
+                    </svg>
+
+                    <h2 class="fw-normal">Planejando melhor de o seu tempo</h2>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="bi bi-tag"></i>
+                               Preço: Gratuito
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-clock"></i>
+                               Duração: 2 horas
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-mouse2-fill"></i>
+                               Formato: Online
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p><a class="btn btn-secondary" href="#">Acesse aqui »</a></p>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" id="circulo3" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <title> Empreendedorismo feminino</title>
+                    </svg>
+
+                    <h2 class="fw-normal">Conquiste seu cliente</h2>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="bi bi-tag"></i>
+                               Preço: Gratuito
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-clock"></i>
+                               Duração: 2 horas
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-mouse2-fill"></i>
+                               Formato: Online
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p><a class="btn btn-secondary" href="#">Acesse aqui »</a></p>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" id="circulo4" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <title> Empreendedorismo feminino</title>
+                    </svg>
+
+                    <h2 class="fw-normal">Formalização da empresa</h2>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="bi bi-tag"></i>
+                               Preço: Gratuito
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-clock"></i>
+                               Duração: 2 horas
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-mouse2-fill"></i>
+                               Formato: Online
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p><a class="btn btn-secondary" href="#">Acesse aqui »</a></p>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" id="circulo5" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <title> Empreendedorismo feminino</title>
+                    </svg>
+
+                    <h2 class="fw-normal">Conhecendo a si mesma e as emoções</h2>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="bi bi-tag"></i>
+                               Preço: Gratuito
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-clock"></i>
+                               Duração: 2 horas
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-mouse2-fill"></i>
+                               Formato: Online
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p><a class="btn btn-secondary" href="#">Acesse aqui »</a></p>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <svg class="bd-placeholder-img rounded-circle" id="circulo6" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <title> Empreendedorismo feminino</title>
+                    </svg>
+
+                    <h2 class="fw-normal">Aumentando sua autoconfiança para liderar</h2>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="bi bi-tag"></i>
+                               Preço: Gratuito
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-clock"></i>
+                               Duração: 2 horas
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <i class="bi bi-mouse2-fill"></i>
+                               Formato: Online
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p><a class="btn btn-secondary" href="#">Acesse aqui »</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- RODAPÉ -->
+    <div class="container" th:replace="base :: footer"></div>    
+</body>
+
+</html>

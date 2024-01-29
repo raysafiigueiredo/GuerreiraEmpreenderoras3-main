@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark"  xmlns:th="www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Framework Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- Biblioteca JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+
+	<!-- CSS Externo -->
+	<link rel="stylesheet" href="./css/cadastre-se.css">
+
+	<!-- Fivecon -->
+	<link rel="shortcut icon" href="./img/favicons/Mae.png" type="image/x-icon" />
+	<title>Listagem de Cadastro</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<div th:replace="base :: navlinks"> </div>
+    <!-- CORPO -->
+<div class="row" id="paraBaixo">
+			<div class="col-sm-12">
+				<h1>Listagem de Cadastro</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Nome</th>
+							<th scope="col">CPF</th>
+							<th scope="col">Data de Nascimento</th>
+							<th scope="col">Telefone</th>
+							<th scope="col">Rede Sociais</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="cadastro : ${cadastros}">
+							<th scope="row" th:text="${cadastro.id}"></th>
+							<td>
+								<a th:text="${cadastro.nome}" th:href="@{/cadastro/{id} (id=${cadastro.id})}"></a>
+							</td>
+							<td th:text="${cadastro.cpf}"></td>
+							<td th:text="${cadastro.dataNascimento}"></td>
+							<td th:text="${cadastro.telefone}"></td>
+							<td th:text="${cadastro.redeSocial}"></td>
+							<td>
+								<a th:href="@{/cadastro/{id}/editar (id=${cadastro.id})}" class="btn btn-warning">
+									Editar
+								</a>
+								<a th:href="@{/cadastro/{id}/excluir (id=${cadastro.id})}" class="btn btn-danger"
+									onclick="return confirm('Tem certeza que deseja excluir o cadastro?');">
+									Excluir
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<a th:href="@{/cadastro/cadastrar}" class="btn btn-primary">Cadastrar novo Usuario</a>
+			</div>
+		</div>
+	</main>
+	 <!-- RODAPÉ -->
+    <div class="container" th:replace="base :: footer"></div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+</body>
+</html>
